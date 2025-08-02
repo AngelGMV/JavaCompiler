@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #5dade2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javacompiler.TokensViewController">
+    <children>
+        <Label layoutX="300.0" layoutY="30.0" text="Tokens Detectados">
+            <font>
+                <Font name="Nirmala Text" size="24.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tablaTokens" layoutX="50.0" layoutY="80.0" prefHeight="470.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="columnaLexema" prefWidth="250.0" text="Lexema" />
+                <TableColumn fx:id="columnaTipo" prefWidth="200.0" text="Tipo" />
+                <TableColumn fx:id="columnaLinea" prefWidth="120.0" text="Línea" />
+                <TableColumn fx:id="columnaColumna" prefWidth="120.0" text="Columna" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
